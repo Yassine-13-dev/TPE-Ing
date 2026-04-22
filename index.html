@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire HTML5 Complet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulaire HTML5</h1>
+
+    <form>
+        <!-- Champs HTML5 -->
+        <label>Nom :</label>
+        <input type="text" required><br>
+
+        <label>Email :</label>
+        <input type="email" required><br>
+
+        <label>Mot de passe :</label>
+        <input type="password"><br>
+
+        <label>Nombre :</label>
+        <input type="number"><br>
+
+        <label>Téléphone :</label>
+        <input type="tel"><br>
+
+        <label>URL :</label>
+        <input type="url"><br>
+
+        <label>Date :</label>
+        <input type="date"><br>
+
+        <label>Heure :</label>
+        <input type="time"><br>
+
+        <label>Couleur :</label>
+        <input type="color"><br>
+
+        <label>Fichier :</label>
+        <input type="file"><br>
+
+        <label>Genre :</label>
+        <input type="radio" name="genre"> Homme
+        <input type="radio" name="genre"> Femme<br>
+
+        <label>Langages :</label>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JS<br>
+
+        <label>Pays :</label>
+        <select>
+            <option>Cameroun</option>
+            <option>France</option>
+        </select><br>
+
+        <label>Message :</label>
+        <textarea></textarea><br>
+
+    </form>
+
+    <!-- Fonction 1 : TAXE -->
+    <h2>Calcul de taxe (17%)</h2>
+    <input type="number" id="prix" placeholder="Entrer le prix">
+    <button type="button" onclick="calculerTaxe()">Calculer</button>
+    <p id="resultatTaxe"></p>
+
+        <!-- Fonction 2 : DATE -->
+    <h2>Date du jour</h2>
+    <button onclick="afficherDate()">Afficher la date</button>
+    <p id="date"></p>
+    <!-- Fonction 3 : ARRAY -->
+    <h2>Recherche dans un tableau</h2>
+    <input type="number" id="nombre" placeholder="Entrer un nombre">
+    <button onclick="verifierNombre()">Vérifier</button>
+    <p id="resultatArray"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
